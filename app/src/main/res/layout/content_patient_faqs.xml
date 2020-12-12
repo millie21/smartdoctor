@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Patient.PatientFAQs">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="Welcome:"
+            android:layout_toRightOf="@+id/centerShim"
+            android:layout_gravity="center_horizontal"
+            android:textSize="20dp"
+            android:id="@+id/welcomemessage"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="#fff"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+
+            />
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:visibility="visible"
+            android:layout_marginBottom="2.5dp"
+            card_view:cardCornerRadius="1dp"
+            android:layout_centerHorizontal="true"
+            card_view:cardBackgroundColor="#fff"
+            android:layout_below="@+id/welcomemessage"
+            card_view:cardElevation="0dp"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:elevation="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_assignment_white_18dp"
+                    android:tint="@color/colorPrimary"
+                    android:layout_margin="5dp"/>
+
+                <View
+                    android:id="@+id/centerShimy"
+                    android:layout_height="60dp"
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/iv1"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_below="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_centerVertical="true"
+                    android:text="covid-19"
+                    android:textAllCaps="true"
+                    android:layout_toRightOf="@+id/centerShimy"
+                    android:id="@+id/welcome"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_marginBottom="5dp"
+
+                    />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view1"
+            android:layout_below="@+id/card_view0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:visibility="visible"
+            android:layout_marginBottom="2.5dp"
+            card_view:cardCornerRadius="1dp"
+            android:layout_centerHorizontal="true"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardElevation="3dp"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:elevation="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_assignment_white_18dp"
+                    android:tint="@color/colorPrimary"
+                    android:layout_margin="5dp"/>
+
+                <View
+                    android:id="@+id/centerShimy2"
+                    android:layout_height="60dp"
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/iv2"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_below="@+id/iv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="High Blood Pressure (Hypertension)"
+                    android:textAllCaps="true"
+                    android:layout_toRightOf="@+id/centerShimy2"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_marginBottom="5dp"
+
+                    />
+
+                    />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view2"
+            android:layout_below="@+id/card_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:visibility="visible"
+            android:layout_marginBottom="2.5dp"
+            card_view:cardCornerRadius="1dp"
+            android:layout_centerHorizontal="true"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardElevation="3dp"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:elevation="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_assignment_white_18dp"
+                    android:tint="@color/colorPrimary"
+                    android:layout_margin="5dp"/>
+
+                <View
+                    android:id="@+id/centerShimy3"
+                    android:layout_height="60dp"
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/iv3"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_below="@+id/iv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Welcome!"
+                    android:textAllCaps="true"
+                    android:layout_toRightOf="@+id/centerShimy3"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_marginBottom="5dp"
+
+                    />
+
+                />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view3"
+            android:layout_below="@+id/card_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:visibility="visible"
+            android:layout_marginBottom="2.5dp"
+            card_view:cardCornerRadius="1dp"
+            android:layout_centerHorizontal="true"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardElevation="3dp"
+            android:gravity="center"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left">
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:visibility="visible"
+                    android:elevation="4dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/baseline_assignment_white_18dp"
+                    android:tint="@color/colorPrimary"
+                    android:layout_margin="5dp"/>
+
+                <View
+                    android:id="@+id/centerShimy4"
+                    android:layout_height="60dp"
+                    android:layout_width="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone"
+                    android:layout_toRightOf="@+id/iv4"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:layout_below="@+id/iv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Dietary supplements"
+                    android:textAllCaps="true"
+                    android:layout_toRightOf="@+id/centerShimy4"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_marginBottom="5dp"
+
+                    />
+
+                />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transbackground"
+    tools:context=".Patient.CreateAppointment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Assign Prescription"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:id="@+id/TextPatientName"
+            android:layout_below="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Patient: "
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorPurple"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            />
+
+        <EditText
+            android:id="@+id/TextPatientName2"
+            android:layout_toRightOf="@+id/TextPatientName"
+            android:layout_below="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Millie Agallo"
+            android:textSize="15dp"
+            android:visibility="gone"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:layout_margin="0dp"
+            />
+
+        <TextView
+            android:id="@+id/editTextDisease"
+            android:layout_below="@id/TextPatientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Disease: "
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorPurple"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <EditText
+            android:id="@+id/editTextDisease2"
+            android:layout_below="@+id/TextPatientName2"
+            android:layout_toRightOf="@id/editTextDisease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Malaria"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:layout_margin="0dp"
+            />
+
+        <TextView
+            android:id="@+id/editTextStatus"
+            android:layout_below="@id/editTextDisease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: "
+            android:textColor="@color/colorWhite"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColorHint="@color/colorPurple"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/editTextStatus2"
+            android:layout_below="@+id/editTextDisease2"
+            android:layout_toRightOf="@id/editTextStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Millie Agallo"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:layout_margin="0dp"
+            />
+        <TextView
+            android:id="@+id/editTextPrescription"
+            android:layout_below="@id/editTextStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prescription: "
+            android:textColor="@color/colorWhite"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColorHint="@color/colorPurple"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="5dp" />
+
+        <EditText
+            android:id="@+id/editTextPrescription2"
+            android:layout_below="@+id/editTextStatus2"
+            android:layout_toRightOf="@id/editTextPrescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Millie Agallo"
+            android:textSize="15dp"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:layout_margin="0dp"
+            />
+
+
+        <Button
+            android:id="@+id/buttonCreate"
+            android:layout_below="@+id/editTextPrescription2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/greenbackground"
+            android:text="Prescribe" />
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+</ScrollView>

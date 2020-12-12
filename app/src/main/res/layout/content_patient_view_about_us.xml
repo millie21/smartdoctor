@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transbackground"
+    tools:context=".Patient.PatientViewAboutUs">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                />
+
+            <EditText
+                android:id="@+id/editTextPatientId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Name" />
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/editTextContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Contact" />
+
+            <EditText
+                android:id="@+id/editTextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Message" />
+
+            <Button
+                android:id="@+id/buttonSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/greenbackground"
+                android:text="Send" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</ScrollView>

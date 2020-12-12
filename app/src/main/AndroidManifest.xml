@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.smartdoctor">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Admin.Admin_DoctorReg"
+           ></activity>
+        <activity
+            android:name=".Admin.Admin_ViewDoctors"
+           />
+        <activity
+            android:name=".Admin.Admin_ViewQueries"
+          />
+        <activity
+            android:name=".Doctor.DoctorPrescribeOption"
+           />
+        <activity
+            android:name=".Doctor.PatientHealthData"
+            />
+        <activity
+            android:name=".Doctor.PatientPrescriptions"
+             />
+        <activity
+            android:name=".Doctor.Doctorr_ProfileView"
+           />
+        <activity
+            android:name=".Patient.ViewSingleAppointment"
+            />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".Nurses.NurseLoginActivity"
+            android:label="@string/title_activity_nurse_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Doctor.DoctorLoginActivity"
+           />
+        <activity
+            android:name=".OptionLoginActivity"
+
+           />
+        <activity
+            android:name=".Patient.ViewAllAppointments"
+           />
+        <activity
+            android:name=".Patient.ViewPastAppointments"
+            android:label="@string/title_activity_view_past_appointments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Patient.CreateAppointment"
+            />
+        <activity
+            android:name=".Patient.PatientFAQs"
+            />
+        <activity
+            android:name=".Patient.ViewPrescriptions"
+            />
+        <activity
+            android:name=".Patient.PatientHealthStats"
+          />
+        <activity
+            android:name=".Patient.PatientViewHelp"
+           />
+        <activity
+            android:name=".Patient.PatientViewAboutUs"
+           />
+        <activity
+            android:name=".Patient.PatientViewAppointments"
+             />
+        <activity
+            android:name=".Nurse.NurseHomePage"
+            android:label="@string/title_activity_nurse_home_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Patient.PatientHomePage"
+           />
+        <activity
+            android:name=".Doctor.DoctorHomePage"
+            />
+        <activity
+            android:name="Admin.AdminHomePage"
+             />
+        <activity
+            android:name=".MainLoginActivity"
+            />
+        <activity
+            android:name=".UserRegisterActivity"
+          />
+        <activity
+            android:name=".Doctor.Doctor_AllNurses"
+          />
+        <activity
+            android:name=".Doctor.Doctor_ViewHelp"
+            android:parentActivityName=".Doctor.HomeActivity"
+           />
+        <activity
+            android:name=".Doctor.Doctor_ViewAboutUs"
+            android:parentActivityName=".Doctor.HomeActivity"
+           />
+        <activity
+            android:name=".Doctor.DoctorViewAppointments"
+            android:parentActivityName=".Doctor.HomeActivity"
+            />
+        <activity
+            android:name=".Doctor.Doctor_ViewNurses"
+            android:parentActivityName=".Doctor.HomeActivity"
+            />
+        <activity
+            android:name=".Doctor.ProfileView"
+            android:parentActivityName=".Doctor.HomeActivity"
+            /> <!-- <activity -->
+        <!-- android:name=".UserLoginActivity" -->
+        <!-- android:label="@string/title_activity_user_login" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar" /> -->
+        <activity
+            android:name=".Doctor.HomeActivity"
+        />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PatientRegister"
+
+           />
+        <activity
+            android:name=".Doctor.Registration"
+            android:parentActivityName=".Doctor.HomeActivity" />
+        <activity android:name=".Doctor.Doctor_ViewPatients" />
+        <activity android:name=".Patient.UserLoginActivity" />
+        <activity android:name=".Admin.AdminLoginActivity" />
+        <activity android:name=".Admin.Admin_ViewPrescriptions" />
+        <activity android:name=".Admin.Admin_ViewAllAppointments" />
+        <activity android:name=".Admin.Admin_ViewNurses" />
+        <activity android:name=".Admin.Admin_ViewPatients" />
+        <activity android:name=".Admin.Admin_Registration" />
+        <activity android:name=".Admin.Admin_ProfileView" />
+        <activity android:name=".Admin.Admin_ViewHelp" />
+        <activity android:name=".Admin.AdminHomePage" />
+        <activity android:name=".Admin.Admin_CreateAppointment" />
+        <activity android:name=".Admin.Admin_ViewAboutUs" />
+        <activity android:name=".Admin.Admin_ViewAppointments"/>
+    </application>
+
+</manifest>

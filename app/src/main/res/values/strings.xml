@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">SmartDoctor</string>
+    <string name="title_activity_patient_register">PatientRegister</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_user_login">UserLoginActivity</string>
+    <string name="title_activity_profile_view">ProfileView</string>
+    <string name="title_activity_doctor__view_nurses">Doctor_ViewNurses</string>
+    <string name="title_activity_doctor_view_appointments">DoctorViewAppointments</string>
+    <string name="title_activity_doctor__view_about_us">Doctor_ViewAboutUs</string>
+    <string name="title_activity_doctor__view_help">Doctor_ViewHelp</string>
+
+
+    <array name="teams">
+        <item>Cardiology</item>
+        <item>Oncology</item>
+        <item>Pharmacy</item>
+    </array>
+
+    <array name="specialization">
+        <!--<item>Select specialization</item>-->
+        <item>Cardiologist</item>
+        <item>Neurologist</item>
+        <item>Dermatologist</item>
+        <item>Physician</item>
+        <item>Gastroenterologist</item>
+        <item>Surgeon</item>
+        <item>Physchiatrist</item>
+    </array>
+
+    <array name="appointment_times">
+        <item>Select time</item>
+        <item>08:00:00 AM</item>
+        <item>10:00:00 AM</item>
+        <item>12:00:00 AM</item>
+        <item>14:00:00 PM</item>
+        <item>16:00:00 PM</item>
+    </array>
+    <string name="title_activity_doctor__all_nurses">Doctor_AllNurses</string>
+    <string name="title_activity_user_register">UserRegisterActivity</string>
+    <string name="title_activity_main_login">MainLoginActivity</string>
+    <string name="title_activity_admin_home_page">AdminHomePage</string>
+    <string name="title_activity_doctor_home_page">DoctorHomePage</string>
+    <string name="title_activity_patient_home_page">PatientHomePage</string>
+    <string name="title_activity_nurse_home_page">NurseHomePage</string>
+    <string name="title_activity_patient_view_appointments">PatientViewAppointments</string>
+    <string name="title_activity_patient_view_about_us">PatientViewAboutUs</string>
+    <string name="title_activity_patient_view_help">PatientViewHelp</string>
+    <string name="title_activity_patient_health_stats">PatientHealthStats</string>
+    <string name="title_activity_patient_faqs">PatientFAQs</string>
+    <string name="title_activity_create_appointment">CreateAppointment</string>
+    <string name="title_activity_view_past_appointments">ViewPastAppointments</string>
+    <string name="title_activity_view_upcoming_appointments">ViewUpcomingAppointments</string>
+    <string name="title_activity_view_all_appointments">ViewAllAppointments</string>
+    <string name="title_activity_option_login">OptionLoginActivity</string>
+    <string name="title_activity_doctor_login">DoctorLoginActivity</string>
+    <string name="title_activity_nurse_login">NurseLoginActivity</string>
+    <string name="title_activity_view_single_appointment">ViewSingleAppointment</string>
+    <string name="title_activity_doctorr__profile_view">Doctorr_ProfileView</string>
+    <string name="title_activity_patient_prescriptions">PatientPrescriptions</string>
+    <string name="title_activity_patient_health_data">PatientHealthData</string>
+    <string name="title_activity_doctor_prescribe_option">DoctorPrescribeOption</string>
+    <string name="title_activity_admin__view_queries">Admin_ViewQueries</string>
+    <string name="title_activity_admin__view_doctors">Admin_ViewDoctors</string>
+    <string name="title_activity_admin__doctor_reg">Admin_DoctorReg</string>
+</resources>

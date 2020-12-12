@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Doctor.Doctor_ViewAboutUs">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp">
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/webView"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!--<android.support.v7.widget.CardView-->
+                <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/card_view0"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="1dp"-->
+                <!--android:layout_marginLeft="0dp"-->
+                <!--android:layout_marginRight="0dp"-->
+                <!--android:visibility="visible"-->
+                <!--android:layout_marginBottom="2.5dp"-->
+                <!--card_view:cardCornerRadius="1dp"-->
+                <!--card_view:cardBackgroundColor="#fff">-->
+                <!--<RelativeLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/iv1"-->
+                        <!--android:layout_width="20dp"-->
+                        <!--android:layout_height="20dp"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:visibility="visible"-->
+                        <!--android:elevation="4dp"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:layout_alignParentLeft="true"-->
+                        <!--android:src="@drawable/ic_launcher_foreground"-->
+                        <!--android:layout_margin="10dp"/>-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="5dp"-->
+                        <!--android:text="Meet the Team"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:textAllCaps="false"-->
+                        <!--android:id="@+id/helpintro"-->
+                        <!--android:textAppearance="@style/TextAppearance.AppCompat.Small"-->
+                        <!--android:layout_marginBottom="5dp"-->
+                        <!--/>-->
+
+                <!--</RelativeLayout>-->
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:id="@+id/card_view3"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="130dp"-->
+                <!--card_view:cardCornerRadius="1dp"-->
+                <!--android:layout_below="@+id/card_view"-->
+                <!--android:layout_marginLeft="0dp"-->
+                <!--android:layout_marginTop="2.5dp"-->
+                <!--android:layout_marginBottom="2.5dp"-->
+                <!--android:layout_marginRight="2.5dp"-->
+                <!--card_view:cardElevation="0dp"-->
+                <!--&gt;-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/btLeft2"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:src="@drawable/ic_launcher_foreground"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:elevation="4dp"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="32dp"-->
+                    <!--android:layout_gravity="center|bottom"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:text="Call Us at: (***) ***-****"-->
+                    <!--/>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+            <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+                <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--android:id="@+id/card_view5"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="130dp"-->
+                <!--card_view:cardCornerRadius="1dp"-->
+                <!--android:layout_below="@+id/card_view3"-->
+                <!--android:layout_marginLeft="0dp"-->
+                <!--android:layout_marginTop="2.5dp"-->
+                <!--android:layout_marginBottom="2.5dp"-->
+                <!--android:layout_marginRight="2.5dp"-->
+                <!--card_view:cardElevation="0dp">-->
+
+                <!--<ImageButton-->
+                    <!--android:id="@+id/btLeft22"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="50dp"-->
+                    <!--android:src="@drawable/ic_launcher_foreground"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:elevation="4dp"-->
+                    <!--/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_gravity="center|bottom"-->
+                    <!--android:layout_margin="5dp"-->
+                    <!--android:text="Email Us at: support@smartdoctor.com"-->
+
+                    <!--/>-->
+
+            <!--</android.support.v7.widget.CardView>-->
+
+        </RelativeLayout>
+    </ScrollView>

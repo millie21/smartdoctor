@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transbackground"
+    tools:context=".Admin.Admin_CreateAppointment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:text="Book Appointment"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/TextSpecialization"
+            android:layout_below="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:text="Specialization: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_margin="10dp"
+            />
+
+        <Spinner
+            android:id="@+id/editTextSpecialization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@id/TextSpecialization"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/colorWhite"
+            android:inputType="text"
+            android:entries="@array/specialization"/>
+
+        <TextView
+            android:id="@+id/TextDoctors"
+            android:layout_below="@+id/TextSpecialization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor: "
+            android:textColor="@color/colorWhite"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColorHint="@color/colorPurple"
+            android:layout_margin="10dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextDoctors"
+            android:layout_toRightOf="@id/TextDoctors"
+            android:layout_below="@id/editTextSpecialization"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:hint="Doctors"
+            android:textColorHint="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/TextConsultationFees"
+            android:layout_below="@+id/TextDoctors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fees: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <EditText
+            android:id="@+id/editTextConsultationFees"
+            android:layout_toRightOf="@id/TextConsultationFees"
+            android:layout_below="@id/editTextDoctors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Consultation Fees"
+            android:textColorHint="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/TextDate"
+            android:layout_below="@+id/TextConsultationFees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_below="@id/editTextConsultationFees"
+            android:layout_toRightOf="@+id/TextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Appointment Date"
+            android:textColorHint="@color/colorWhite"
+            android:backgroundTint="@color/colorWhite"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/TextTime"
+            android:layout_below="@+id/TextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorWhite"
+            />
+
+        <Spinner
+            android:id="@+id/editTextTime"
+            android:layout_toRightOf="@+id/TextTime"
+            android:layout_below="@id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif"
+            android:backgroundTint="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:entries="@array/appointment_times"/>
+
+
+        <Button
+            android:id="@+id/buttonCreate"
+            android:layout_below="@+id/editTextTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/greenbackground"
+            android:text="Create" />
+
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/editTextOne"
+            android:layout_below="@+id/TextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:visibility="gone"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_margin="10dp"
+            android:textColorHint="@color/colorPurple"
+            />
+    </RelativeLayout>
+</ScrollView>

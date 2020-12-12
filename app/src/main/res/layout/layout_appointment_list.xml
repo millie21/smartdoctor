@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/transbackground"
+    android:padding="8dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/fab_margin"
+        android:elevation="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           >
+
+            <ImageView
+                android:id="@+id/picd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:src="@drawable/baseline_date_range_black_18dp"
+                />
+
+        <TextView
+            android:id="@+id/textViewappdate"
+            android:layout_toRightOf="@id/picd"
+            android:layout_toEndOf="@id/picd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_weight="8"
+            android:text="2020-05-05"
+            android:textColor="@color/colorPurple"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:id="@+id/pice"
+                android:layout_below="@id/picd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:src="@drawable/baseline_date_range_black_18dp"
+                />
+
+        <TextView
+            android:layout_below="@+id/textViewappdate"
+            android:id="@+id/textViewDoc"
+            android:layout_toRightOf="@+id/pice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_weight="8"
+            android:text="Dr"
+            android:textColor="@color/colorPurple"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:layout_below="@+id/textViewappdate"
+                android:id="@+id/textViewDoctor"
+                android:layout_toRightOf="@+id/textViewDoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_weight="8"
+                android:text="Dr"
+                android:textColor="@color/colorPurple"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:id="@+id/picf"
+                android:layout_below="@id/pice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:src="@drawable/baseline_access_time_black_18dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/textViewDoc"
+                android:id="@+id/textViewTime"
+                android:layout_toRightOf="@+id/pice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_weight="8"
+                android:text="Dr"
+                android:textColor="@color/colorPurple"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+            android:layout_below="@+id/textViewDoctor"
+            android:id="@+id/textFees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/textViewFees"
+            android:layout_weight="8"
+            android:padding="4dp"
+            android:text="$"
+            android:textColor="@color/colorPurple"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:layout_below="@+id/textViewDoctor"
+            android:id="@+id/textViewFees"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_weight="8"
+            android:padding="4dp"
+            android:textColor="@color/colorPurple"
+            android:text="500"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+
+                android:id="@+id/emailtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="8"
+                android:visibility="gone"
+                android:padding="4dp"
+                android:textColor="@color/colorPurple"
+                android:text="500"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewFees"
+                android:background="@drawable/redbuttonbackground"
+                android:textColor="@color/colorWhite"
+                android:layout_alignParentRight="true"
+                android:text="Cancel"
+                android:layout_margin="5dp"
+                />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <!--<TextView-->
+        <!--android:textStyle="bold"-->
+        <!--android:id="@+id/textViewUpdate"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBottom="@+id/textViewDelete"-->
+        <!--android:layout_toLeftOf="@+id/textViewDelete"-->
+        <!--android:layout_toStartOf="@+id/textViewDelete"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="Update"-->
+        <!--android:textColor="#498C1A" />-->
+
+    <!--<TextView-->
+        <!--android:textStyle="bold"-->
+        <!--android:id="@+id/textViewDelete"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:padding="5dp"-->
+        <!--android:text="Delete"-->
+        <!--android:textColor="#C20A10" />-->
+
+</RelativeLayout>

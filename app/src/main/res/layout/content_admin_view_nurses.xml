@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transbackground"
+    tools:context=".Admin.Admin_ViewNurses">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="Manage Nurses"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <EditText
+                android:id="@+id/editTextPatientId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:hint="First Name" />
+            <EditText
+                android:id="@+id/editTextLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:hint="Last Name" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:hint="Phonenumber" />
+            <!--<RatingBar-->
+            <!--android:id="@+id/ratingBar"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:numStars="5"-->
+            <!--android:stepSize="1" />-->
+
+            <Spinner
+                android:id="@+id/spinnerDepartment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/colorWhite"
+                android:entries="@array/specialization" />
+
+            <Button
+                android:id="@+id/buttonAddUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/greenbackground"
+                android:textColor="@color/colorWhite"
+                android:layout_margin="10dp"
+                android:text="Add nurse" />
+
+            <Button
+                android:id="@+id/buttonview"
+                android:layout_below="@id/buttonAddUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/greenbackground"
+                android:textColor="@color/colorWhite"
+                android:text="View nurses" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewHeroes"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</ScrollView>

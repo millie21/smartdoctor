@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/transbackground"
+    android:padding="8dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/fab_margin"
+        android:elevation="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/textspecialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:src="@drawable/baseline_date_range_black_18dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewappdate"
+                android:layout_toRightOf="@id/textspecialization"
+                android:layout_toEndOf="@id/textspecialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_weight="8"
+                android:text="2020-05-05"
+                android:textColor="@color/colorPurple"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:id="@+id/pic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textspecialization"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:src="@drawable/baseline_person_pin_black_18dp"
+                />
+            <TextView
+                android:layout_below="@+id/textViewappdate"
+                android:id="@+id/textViewDo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/pic1"
+                android:padding="4dp"
+                android:layout_weight="8"
+                android:text="Dr."
+                android:textColor="@color/colorPurple"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+            <TextView
+                android:layout_below="@+id/textViewappdate"
+                android:id="@+id/textViewDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textViewDo"
+                android:padding="4dp"
+                android:layout_weight="8"
+                android:text="Dr. America"
+                android:textColor="@color/colorPurple"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:id="@+id/textspecialization3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pic1"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:src="@drawable/baseline_access_time_black_18dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/textViewDoctor"
+                android:id="@+id/textViewTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/textspecialization3"
+                android:padding="4dp"
+                android:layout_weight="8"
+                android:text="Dr. America"
+                android:textColor="@color/colorPurple"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:layout_below="@+id/textViewDoctor"
+                android:id="@+id/textFees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/textViewFees"
+                android:layout_weight="8"
+                android:padding="4dp"
+                android:text="$"
+                android:textColor="@color/colorPurple"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:layout_below="@+id/textViewDoctor"
+                android:id="@+id/textViewFees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="8"
+                android:padding="4dp"
+                android:textColor="@color/colorPurple"
+                android:text="500"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+
+                android:id="@+id/emailtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="8"
+                android:visibility="gone"
+                android:padding="4dp"
+                android:textColor="@color/colorPurple"
+                android:text="500"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>

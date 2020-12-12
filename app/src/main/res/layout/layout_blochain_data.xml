@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/transbackground"
+    android:padding="8dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/fab_margin"
+        android:elevation="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textspecialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:text="Patient:"
+                android:padding="2dp"
+                android:layout_weight="8"
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:src="@drawable/baseline_date_range_black_18dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewtemperature"
+                android:layout_toRightOf="@id/textspecialization"
+                android:layout_toEndOf="@id/textspecialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:padding="2dp"
+                android:layout_weight="8"
+                android:text="Captain America"
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/docname"
+                android:layout_below="@id/textspecialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:text="Heartrate:"
+                android:padding="2dp"
+                android:layout_weight="8"
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:src="@drawable/baseline_perm_identity_black_18dp"
+                />
+            <TextView
+                android:layout_below="@+id/textViewtemperature"
+                android:id="@+id/textViewheartrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/docname"
+                android:layout_marginTop="14dp"
+                android:padding="2dp"
+                android:layout_weight="8"
+                android:text="Dr."
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:id="@+id/precname"
+                android:layout_below="@id/docname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:text="Respiration:"
+                android:padding="2dp"
+                android:layout_weight="8"
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_below="@+id/textViewheartrate"
+                android:id="@+id/textViewrespiration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/precname"
+                android:layout_marginTop="6dp"
+                android:padding="2dp"
+                android:layout_weight="8"
+                android:textColor="@color/colorGreen"
+                android:text="Malaria pills"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <TextView
+                android:id="@+id/precname3"
+                android:layout_below="@id/precname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="2dp"
+                android:text="Spo2:"
+                android:padding="2dp"
+                android:layout_weight="8"
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/textViewspo2"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewrespiration"
+                android:layout_marginLeft="-38dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/precname"
+                android:layout_weight="8"
+                android:padding="1dp"
+                android:text="Malaria pills"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorGreen" />
+
+
+            <TextView
+                android:id="@+id/precname4"
+                android:layout_below="@id/precname3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="2dp"
+                android:text="Temperature:"
+                android:padding="2dp"
+                android:layout_weight="8"
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:layout_below="@+id/textViewspo2"
+                android:id="@+id/textViewfname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/precname4"
+                android:layout_weight="8"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:padding="1dp"
+                android:textColor="@color/colorGreen"
+                android:text="Malaria pills"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+
+            <TextView
+                android:id="@+id/precname5"
+                android:layout_below="@id/precname4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="2dp"
+                android:text="Previous Hash:"
+                android:padding="2dp"
+                android:layout_weight="8"
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+            <TextView
+                android:id="@+id/textViewprevhash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewfname"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/precname"
+                android:layout_weight="8"
+                android:lines="2"
+                android:maxLines="2"
+                android:padding="1dp"
+                android:text="Malaria pills"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorGreen" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

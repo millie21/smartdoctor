@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/transbackground"
+    tools:context=".Admin.Admin_Registration">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:text="Patient Registeration"/>
+
+            <EditText
+                android:id="@+id/editTextPatientId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="First Name" />
+            <EditText
+                android:id="@+id/editTextLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Last Name" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Email" />
+
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:backgroundTint="@color/colorWhite"
+                android:hint="Phonenumber" />
+
+            <Button
+                android:id="@+id/buttonAddUpdate"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/greenbackground"
+                android:textColor="@color/colorWhite"
+                android:text="Register" />
+
+            <Button
+                android:id="@+id/buttonview"
+                android:layout_margin="10dp"
+                android:layout_below="@id/buttonAddUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/greenbackground"
+                android:textColor="@color/colorWhite"
+                android:text="View patients" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listViewHeroes"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayout" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</ScrollView>

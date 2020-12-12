@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.smartdoctor.Doctor.Doctor_ViewPatients">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patients"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        />
+    <ListView
+        android:layout_margin="10dp"
+        android:id="@+id/listViewHeroes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonvie"
+        android:layout_gravity="bottom"
+        android:layout_below="@id/buttonAddUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View patients" />
+
+    <!--<android.support.design.widget.BottomNavigationView-->
+        <!--android:id="@+id/bottom_nav"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#007AFF"-->
+        <!--app:itemIconTint="@android:color/white"-->
+        <!--app:itemTextColor="#FFFFFF"-->
+        <!--app:menu="@menu/bottombar_menu"/>-->
+</LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="16dp">-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/editTextPatientId"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:visibility="gone" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/editTextFirstName"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:hint="First Name" />-->
+        <!--<EditText-->
+            <!--android:id="@+id/editTextLastName"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:hint="Last Name" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/editTextEmail"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:hint="email" />-->
+
+        <!--<EditText-->
+            <!--android:id="@+id/editTextPhoneNumber"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="8dp"-->
+            <!--android:layout_marginTop="8dp"-->
+            <!--android:hint="Phonenumber" />-->
+        <!--&lt;!&ndash;<RatingBar&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/ratingBar"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:numStars="5"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:stepSize="1" />&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<Spinner&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/spinnerTeamAffiliation"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginBottom="8dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="8dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:entries="@array/teams" />&ndash;&gt;-->
+
+
+        <!--<Button-->
+            <!--android:id="@+id/buttonAddUpdate"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Register" />-->
+    <!--</LinearLayout>-->
+

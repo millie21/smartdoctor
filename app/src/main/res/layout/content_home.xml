@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+tools:context=".Doctor.HomeActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="1dp"
+    android:layout_marginRight="1dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:text="Welcome:"
+        android:layout_toRightOf="@+id/centerShim"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:id="@+id/welcomemessage"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_centerHorizontal="true"
+
+        />
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:visibility="visible"
+        android:layout_marginBottom="2.5dp"
+        card_view:cardCornerRadius="1dp"
+        android:layout_centerHorizontal="true"
+        card_view:cardBackgroundColor="#fff"
+        android:layout_below="@+id/welcomemessage"
+        card_view:cardElevation="0dp"
+        android:gravity="center"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:elevation="4dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_launcher_foreground"
+                android:layout_margin="10dp"/>
+
+            <View
+                android:id="@+id/centerShimy"
+                android:layout_height="60dp"
+                android:layout_width="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/iv1"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Welcome"
+                android:layout_marginLeft="40dp"
+                android:textAllCaps="true"
+                android:layout_toRightOf="@+id/centerShimy"
+                android:id="@+id/welcome"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/centerShimy"
+                android:layout_below="@+id/welcome"
+                android:id="@+id/name"
+                android:layout_margin="5dp"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="70dp"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="65dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:id="@+id/email"
+
+                />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <View
+        android:id="@+id/centerShim"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/centerShim"
+        card_view:cardCornerRadius="1dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginRight="2.5dp"
+        card_view:cardElevation="0dp"
+        android:layout_below="@+id/card_view0">
+
+        <ImageButton
+            android:id="@+id/btLeft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/centerShim"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:elevation="4dp"
+            android:text="Left Button" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center|bottom"
+            android:textAllCaps="true"
+            android:text="My Profile" />
+
+    </android.support.v7.widget.CardView>
+    <!--Same deal, but on the right -->
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/centerShim"
+        android:layout_below="@+id/card_view0"
+        card_view:cardCornerRadius="1dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"
+        card_view:cardElevation="0dp">
+
+        <ImageButton
+            android:id="@+id/btRight"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/centerShim"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:elevation="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|bottom"
+            android:text="patients"
+            android:textAllCaps="true"
+
+            />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view3"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/centerShim"
+        card_view:cardCornerRadius="1dp"
+        android:layout_below="@+id/card_view"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginRight="2.5dp"
+        card_view:cardElevation="0dp"
+       >
+
+        <ImageButton
+            android:id="@+id/btLeft2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/centerShim"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:elevation="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="5dp"
+            android:text="NURSES"
+            android:textAllCaps="true"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view4"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/centerShim"
+        android:layout_below="@+id/card_view2"
+        card_view:cardCornerRadius="1dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"
+        card_view:cardElevation="0dp">
+        <ImageButton
+            android:id="@+id/btRight2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/centerShim"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:elevation="4dp"
+            android:text="Left Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|bottom"
+            android:text="Appointments"
+            android:textAllCaps="true"
+            />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view5"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/centerShim"
+        card_view:cardCornerRadius="1dp"
+        android:layout_below="@+id/card_view3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginRight="2.5dp"
+        card_view:cardElevation="0dp">
+
+        <ImageButton
+            android:id="@+id/btLeft22"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/centerShim"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:elevation="4dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center|bottom"
+            android:layout_margin="5dp"
+            android:text="About Us"
+            android:textAllCaps="true"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view6"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/centerShim"
+        android:layout_below="@+id/card_view4"
+        card_view:cardCornerRadius="1dp"
+        android:layout_marginLeft="2.5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"
+        card_view:cardElevation="0dp">
+        <ImageButton
+            android:id="@+id/btRight26"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/centerShim"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:elevation="4dp"
+            android:text="Left Button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center|bottom"
+            android:text="Help"
+            android:textAllCaps="true"
+
+            />
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+</ScrollView>

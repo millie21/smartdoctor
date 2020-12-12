@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/transbackground"
+    android:padding="8dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/fab_margin"
+        android:elevation="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/textspecialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:src="@drawable/baseline_date_range_black_18dp"
+                />
+
+            <TextView
+                android:id="@+id/textViewappdate"
+                android:layout_toRightOf="@id/textspecialization"
+                android:layout_toEndOf="@id/textspecialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:layout_weight="8"
+                android:text="Captain America"
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:id="@+id/docname"
+                android:layout_below="@id/textspecialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:src="@drawable/baseline_perm_identity_black_18dp"
+                />
+            <TextView
+                android:layout_below="@+id/textViewappdate"
+                android:id="@+id/textViewDoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/docname"
+                android:padding="4dp"
+                android:layout_weight="8"
+                android:text="Dr."
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+            <TextView
+                android:layout_below="@+id/textViewappdate"
+                android:id="@+id/textViewDoctor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textViewDoc"
+                android:padding="4dp"
+                android:layout_weight="8"
+                android:text="America"
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:id="@+id/precname"
+                android:layout_below="@id/docname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:src="@drawable/baseline_message_black_18dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/textViewDoctor"
+                android:id="@+id/textViewFees"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/precname"
+                android:layout_weight="8"
+                android:padding="1dp"
+                android:textColor="@color/colorGreen"
+                android:text="Malaria pills"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

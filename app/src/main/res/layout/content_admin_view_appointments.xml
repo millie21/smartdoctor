@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/transbackground"
+    tools:context="com.example.smartdoctor.Admin.Admin_ViewAllAppointments">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Appointments"
+        android:textColor="@color/colorWhite"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        />
+
+    <ListView
+        android:layout_margin="10dp"
+        android:id="@+id/listViewAppointments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ffffff"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <!--<Button-->
+    <!--android:id="@+id/buttonvie"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:layout_below="@id/buttonAddUpdate"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="View patients" />-->
+
+</LinearLayout>
+

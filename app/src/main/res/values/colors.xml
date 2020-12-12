@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+
+    <color name="colorPrimary">#3DB1F0</color>
+    <color name="colorPrimaryDark">#3DB1F0</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorWhite">#FAF8F8</color>
+
+    <color name="colorGreen">#2392A1</color>
+
+    <!--<color name="colorPurple">#3933af</color>-->
+    <color name="bg_login2">#1F80A7</color>
+    <color name="colorPurple">#3DB1F0</color>
+
+    <color name="colorGreene">#008577</color>
+
+    <color name="colorRed">#F44336</color>
+
+
+
+</resources>

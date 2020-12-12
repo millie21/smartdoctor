@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/transbackground"
+    android:padding="4dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/fab_margin"
+        android:elevation="4dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/namepic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:src="@drawable/baseline_perm_identity_black_18dp"
+                />
+            <TextView
+                android:id="@+id/textname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/namepic"
+                android:padding="4dp"
+                android:visibility="visible"
+                android:layout_weight="8"
+                android:textColor="@color/colorGreen"
+                android:text="Name"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:id="@+id/emailpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:layout_below="@+id/namepic"
+                android:src="@drawable/baseline_email_black_18dp"
+                />
+
+            <TextView
+                android:id="@+id/textemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textname"
+                android:layout_toRightOf="@+id/emailpic"
+                android:padding="4dp"
+                android:layout_weight="8"
+                android:text="Captain America"
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:id="@+id/contactpic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:layout_below="@+id/emailpic"
+                android:src="@drawable/baseline_call_black_18dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/textemail"
+                android:id="@+id/textcontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/contactpic"
+                android:padding="4dp"
+                android:layout_weight="8"
+                android:text="Dr. America"
+                android:textColor="@color/colorGreen"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+                android:id="@+id/messagepic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:tint="@color/colorGreen"
+                android:layout_below="@+id/contactpic"
+                android:src="@drawable/baseline_message_black_18dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/textcontact"
+                android:id="@+id/textmessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Prescription: "
+                android:textColor="@color/colorGreen"
+                android:layout_toRightOf="@+id/messagepic"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
